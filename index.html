@@ -72,19 +72,24 @@
                     
                     m1.play();
                     catGif.src ="/sus-cat-2-suspicious-cat.gif";
-                    m3.play();
+                    setTimeout(() => {
+                        m3.play();
+                 }, 500);
                      
                 } else if(randomNumber === 1) {
                     
                     m2.play(); // Play the second sound
                     catGif.src ="/sus-cat-2-suspicious-cat.gif"; 
-                    m3.play();
+                    setTimeout(() => {
+                        m3.play();
+                 }, 500);
+                    
                    
                 } 
 
                 setTimeout(() => {
                 catGif.src = "chipi-chipi-chapa-chapa.gif"; // Change back to original gif
-            }, 1500); // 2000 milliseconds = 2 seconds
+                 }, 1500); // 2000 milliseconds = 2 seconds
 
             });
         }
